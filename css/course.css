@@ -1,0 +1,134 @@
+/* Fix body padding because navbar is fixed */
+body {
+    padding-top: 80px;
+}
+
+/* HERO SECTION FIX */
+.hero-section {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-background iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Full black shade overlay */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65); /* Increase shade if needed */
+}
+
+/* Text on video */
+.hero-content {
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+/* ========================== */
+/* COURSE CARDS */
+/* ========================== */
+
+.course-box {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.course-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.25);
+}
+
+.course-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.course-content {
+    padding: 15px;
+}
+
+.course-content h3 {
+    color: black;
+    font-weight: bold;
+}
+
+.course-content p {
+    color: #555;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+}
+
+
+/* ===================== */
+/* FOOTER DESIGN */
+/* ===================== */
+
+.site-footer {
+    background: #000;
+    color: #ddd;
+    border-top: 1px solid #222;
+}
+
+.footer-logo {
+    width: 160px;
+    max-width: 100%;
+}
+
+/* Email Styling */
+.footer-email {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.footer-email:hover {
+    color: #a6a6a6;
+    text-decoration: underline;
+}
+
+.footer-icon {
+    font-size: 30px;
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+
+.footer-icon:hover {
+    color: #a6a6a6;
+    transform: translateY(-3px);
+}
+
+/* For smaller screens */
+@media (max-width: 576px) {
+    .footer-logo {
+        width: 140px;
+    }
+
+    .footer-icon {
+        font-size: 26px;
+    }
+}
