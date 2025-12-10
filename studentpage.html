@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Student Dashboard — Responsive</title>
+<link rel="stylesheet" href="css/stdpage.css">
+
+</head>
+<body>
+  <!-- overlay for mobile sidebar -->
+  <div id="overlay" class="overlay" aria-hidden="true" style="display:none"></div>
+
+  <div class="topbar" role="banner">
+    <button id="hamburgerTop" aria-label="Open menu" style="background:#fff;border-radius:8px;padding:8px;border:none;cursor:pointer">
+      ☰
+    </button>
+    <div style="display:flex;align-items:center;gap:12px">
+      <strong>Hexcent Learning</strong>
+    </div>
+    <div style="width:36px"></div>
+  </div>
+
+  <div class="app" role="main">
+    <div class="container" id="appContainer">
+
+      <!-- Sidebar -->
+      <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+        <button class="sidebar-toggle" id="sidebarToggle" aria-controls="sidebar" aria-expanded="false">✕</button>
+        <div class="brand">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="6" fill="#263047"/>
+            <path d="M7 11h10M7 7h10M7 15h6" stroke="#9fb0ff" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+          <h1>Hexcent Learning</h1>
+        </div>
+
+        <nav class="nav" role="navigation">
+          <a class="active" href="#" aria-current="page">Dashboard</a>
+          <a href="#">My Courses</a>
+          <a href="#">Profile</a>
+          <a href="#">Settings</a>
+          <a href="#">Logout</a>
+        </nav>
+      </aside>
+
+      <!-- Main area -->
+      <section class="main" aria-label="Content">
+        <header class="header" role="region" aria-label="Welcome header">
+          <div class="title">
+            <h2>Welcome, Anagha 👋</h2>
+            <div style="color:var(--muted);font-size:13px">Here are your active courses</div>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:12px">
+            <div class="profile" role="group" aria-label="User profile">
+              <div style="text-align:right">
+                <div style="font-weight:600">Anagha</div>
+                <div style="font-size:13px;color:var(--muted)">Student</div>
+              </div>
+              <img src="images/profile.jpg" alt="Anagha profile picture" />
+            </div>
+
+            <!-- hamburger for small screens -->
+            <button id="hamburger" class="sidebar-toggle" aria-label="Open menu" style="background:var(--accent);border:none;color:#fff;padding:10px;border-radius:8px;display:none;cursor:pointer">☰</button>
+          </div>
+        </header>
+
+        <!-- Courses -->
+        <h3 style="margin:0 0 12px 0">My Courses</h3>
+
+        <div class="courses" id="coursesGrid" role="list">
+          <!-- Card 1 -->
+          <article class="card" role="listitem" aria-labelledby="course1Title">
+            <div class="media">
+              <video controls poster="" preload="none" aria-label="Course preview: HTML & CSS Basics">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <h3 id="course1Title">HTML &amp; CSS Basics</h3>
+            <p>Learn the fundamentals of web development — structure and styles.</p>
+            <div class="meta">
+              <div class="modules">5 modules</div>
+              <a class="btn" href="coursemodule.html">Go to course →</a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card" role="listitem" aria-labelledby="course2Title">
+            <div class="media">
+              <video controls preload="none" aria-label="Course preview: JavaScript Essentials">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+              </video>
+            </div>
+            <h3 id="course2Title">JavaScript Essentials</h3>
+            <p>Master the basics of JavaScript to build interactive pages.</p>
+            <div class="meta">
+              <div class="modules">6 modules</div>
+              <a class="btn" href="coursemodule.html">Go to course →</a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card" role="listitem" aria-labelledby="course3Title">
+            <div class="media">
+              <video controls preload="none" aria-label="Course preview: Python for Beginners">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+              </video>
+            </div>
+            <h3 id="course3Title">Python for Beginners</h3>
+            <p>Start programming with Python and learn basic algorithms.</p>
+            <div class="meta">
+              <div class="modules">7 modules</div>
+              <a class="btn" href="coursemodule.html">Go to course →</a>
+            </div>
+          </article>
+
+          <!-- Example more cards (keeps layout consistent) -->
+          <article class="card" role="listitem" aria-labelledby="course4Title">
+            <div class="media" style="background:#eef2ff"></div>
+            <h3 id="course4Title">UI/UX Fundamentals</h3>
+            <p>Design better interfaces & user experiences.</p>
+            <div class="meta">
+              <div class="modules">4 modules</div>
+              <a class="btn" href="coursemodule.html">Go to course →</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+<script src="js/stdpage.js"></script>
+</body>
+</html>
