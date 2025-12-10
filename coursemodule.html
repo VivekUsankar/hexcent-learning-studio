@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Course Module</title>
+<link rel="stylesheet" href="css/coursemodule.css">
+</head>
+<body>
+
+<div class="page">
+
+    <!-- LEFT SIDEBAR MODULE LIST -->
+    <aside class="sidebar" id="moduleList">
+        <h2 id="courseTitle">Course Name</h2>
+        <div class="progress-box">
+            <div class="label">Progress</div>
+            <div class="progress-bar"><div class="bar"></div></div>
+            <span id="progressPercent">0% Complete</span>
+        </div>
+
+        <ul class="modules" id="modulesUl">
+            <!-- Loaded dynamically -->
+        </ul>
+    </aside>
+
+    <!-- RIGHT CONTENT AREA -->
+    <main class="content">
+       <main class="content">
+    <button class="menu-btn" onclick="toggleSidebar()">☰ Modules</button>
+    <a href="studentpage.html" class="back-btn">← Back to Course</a>
+
+
+        <!-- VIDEO SECTION -->
+       <div class="video-container">
+    <iframe id="lessonVideo" 
+        width="100%" 
+        height="450" 
+        style="border-radius: 10px"
+        src="" 
+        frameborder="0"
+        allowfullscreen
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+    </iframe>
+</div>
+
+
+        <!-- LESSON TITLE -->
+        <h1 class="lesson-title" id="lessonTitle">Lesson Title</h1>
+
+        <!-- COMPLETION BUTTON -->
+        <button id="completeBtn" class="complete-btn">Not Completed ✖</button>
+
+        <!-- LESSON DESCRIPTION -->
+        <div class="lesson-description" id="lessonDescription"></div>
+
+    </main>
+
+</div>
+
+<script src="js/coursemodule.js"></script>
+</body>
+</html>
+
+
