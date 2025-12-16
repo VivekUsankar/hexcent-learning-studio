@@ -12,35 +12,50 @@
         <div class="logo">
             <img src="./images/hexcent logo_MAIN white text.png" alt="logo">
         </div>
-        <div class="password">
-            <form action="">
-            <h2>Forget Password</h2>
-            <p>Enter your registered email or phone number, we'll sent you a code to reset your password.</p>
+    <div class="password">
+    <form id="otpForm">
+        <h2>Forget Password</h2>
+        <p>Enter your registered email or phone number, we'll send you a code to reset your password.</p>
 
-            <div class="input-box">
-                    <span class="icon">
-                        <ion-icon name="mail"></ion-icon>
-                    </span>
-                    <input type="text" required>
-                    <label>Email or Phone number</label>
-                </div>
-                <button type="submit">GET OTP</button>
-                <div class="input-box">
-                    <span class="icon">
-                        <ion-icon name="lock-closed"></ion-icon>
-                    </span>
-                    <input type="text" required>
-                    <label>OTP</label>
-                </div>
+        <!-- Success message -->
+        <p id="successMsg" style="display:none; color:#00ff99; text-align:center; margin-bottom:10px;">
+            OTP sent successfully
+        </p>
 
-            <button type="submit">SUBMIT</button>
-
-            <a href="" style="text-decoration: none; color: white;">Back to Login</a>
-        </form>
+        <!-- Email / Phone -->
+        <div class="input-box">
+            <span class="icon">
+                <ion-icon name="mail"></ion-icon>
+            </span>
+            <input type="text" id="emailInput" required placeholder=" ">
+            <label>Email or Phone number</label>
         </div>
+
+        <!-- GET OTP -->
+        <button id="getOtpBtn" type="button">GET OTP</button>
+
+        <!-- OTP Field -->
+        <div class="input-box" id="otpBox" style="display:none;">
+            <span class="icon">
+                <ion-icon name="lock-closed"></ion-icon>
+            </span>
+            <input type="text" id="otpInput" maxlength="6" placeholder=" ">
+            <label>OTP</label>
+        </div>
+
+        <!-- Error message -->
+        <p id="otpError" style="display:none; color:#ff4d4d; text-align:center;">
+            OTP must be 6 digits
+        </p>
+
+        <button id="submitBtn" type="submit" style="display:none;">SUBMIT</button>
+
+        <a href="" style="text-decoration:none; color:white;">Back to Login</a>
+    </form>
+</div>
         
     </div>
-    <script src="./Js/script.js"></script>
+    <script src="./js/forgetpswd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
