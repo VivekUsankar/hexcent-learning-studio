@@ -1,11 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>review page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/review.css">
 </head>
 <body>
 
+<h2 class="reviews-heading">
+  Share Your Review About Our Courses
+</h2>
+
+
+
+<div class="review-wrapper">
+  <div class="review-box">
+
+    <h3>Write a Review</h3>
+
+    <input type="text" id="review-name" placeholder="Your name">
+
+    <!-- Rating Stars -->
+    <div class="star-rating" id="review-stars">
+      <span data-value="1">★</span>
+      <span data-value="2">★</span>
+      <span data-value="3">★</span>
+      <span data-value="4">★</span>
+      <span data-value="5">★</span>
+    </div>
+
+    <textarea id="review-text" placeholder="Write your review..."></textarea>
+
+    <!-- IMPORTANT: type="button" -->
+    <button type="button" onclick="submitReview()">Submit Review</button>
+
+  </div>
+</div>
+<hr>
+ 
+<!-- review-page -->
+
+
+<div class="reviews-container">
+
+  <h2>Customer Reviews</h2>
+
+  <!-- FILTER ABOVE REVIEWS -->
+  <div class="review-filter-top">
+
+    <div class="filter-item" onclick="filterReviews(0)">0+</div>
+
+    <div class="filter-item" onclick="filterReviews(1)">
+      <div class="stars">
+        <span class="filled">★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+      </div>
+    </div>
+
+    <div class="filter-item" onclick="filterReviews(2)">
+      <div class="stars">
+        <span class="filled">★</span><span class="filled">★</span>
+        <span>★</span><span>★</span><span>★</span>
+      </div>
+    </div>
+
+    <div class="filter-item" onclick="filterReviews(3)">
+      <div class="stars">
+        <span class="filled">★</span><span class="filled">★</span><span class="filled">★</span>
+        <span>★</span><span>★</span>
+      </div>
+    </div>
+
+    <div class="filter-item" onclick="filterReviews(4)">
+      <div class="stars">
+        <span class="filled">★</span><span class="filled">★</span>
+        <span class="filled">★</span><span class="filled">★</span>
+        <span>★</span>
+      </div>
+    </div>
+
+    <div class="filter-item" onclick="filterReviews(5)">
+      <div class="stars">
+        <span class="filled">★</span><span class="filled">★</span>
+        <span class="filled">★</span><span class="filled">★</span>
+        <span class="filled">★</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- REVIEWS -->
+  <div id="reviewList">
+
+    <div class="review-card" data-rating="5">
+      <div class="stars">
+        <span class="filled">★</span><span class="filled">★</span>
+        <span class="filled">★</span><span class="filled">★</span>
+        <span class="filled">★</span>
+      </div>
+      <p>Excellent platform with real-world live projects.</p>
+      <span class="reviewer">— Rahul K</span>
+    </div>
+
+    <div class="review-card" data-rating="4">
+      <div class="stars">
+        <span class="filled">★</span><span class="filled">★</span>
+        <span class="filled">★</span><span class="filled">★</span>
+        <span>★</span>
+      </div>
+      <p>Good mentors and structured learning.</p>
+      <span class="reviewer">— Anjali R</span>
+    </div>
+
+    <div class="review-card" data-rating="3">
+      <div class="stars">
+        <span class="filled">★</span><span class="filled">★</span>
+        <span class="filled">★</span><span>★</span><span>★</span>
+      </div>
+      <p>Average experience but useful projects.</p>
+      <span class="reviewer">— Akash S</span>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+  <script src="js/review.js"></script>
 </body>
 </html>
