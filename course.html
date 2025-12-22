@@ -77,50 +77,87 @@
 
 
 
-    <!-- COURSES SECTION -->
-    <section class="container py-5">
-        <h2 class="text-center mb-4 fw-bold">Available Courses</h2>
+<!-- COURSES -->
+<section class="container py-5">
+    <h2 class="text-center fw-bold mb-4">Available Courses</h2>
 
-        <div class="row g-4">
+    <div class="row g-4">
 
-            <!-- Python -->
-            <div class="col-md-4">
-                <div class="course-box shadow">
-                    <img src="images/course/python.jpg" class="course-img" alt="Python Course">
-                    <div class="course-content text-center">
-                        <h3 class="mt-3">Python</h3>
-                        <p>4 Modules</p>
-                        <a href="coursemodule.html" class="btn btn-dark btn-sm px-3">View More</a>
+        <!-- PYTHON -->
+        <div class="col-md-4">
+            <div class="course-box">
+                <img src="images/course/python.jpg" class="course-img">
+
+                <div class="course-content text-center">
+                    <h3>Python</h3>
+                    <p>4 Modules</p>
+
+                    <!-- REVIEW SECTION -->
+                    <div class="review" data-course="python">
+                        <span class="stars">☆☆☆☆☆</span>
+                        <span class="rating-text">0.0</span>
+                        <a href="review.html?course=python" class="review-link">
+                            Write a review
+                        </a>
                     </div>
+
+                    <a href="studentpage.html" class="btn btn-dark btn-sm mt-2">
+                        View More
+                    </a>
                 </div>
             </div>
-
-            <!-- Java -->
-            <div class="col-md-4">
-                <div class="course-box shadow">
-                    <img src="images/course/java.jpg" class="course-img" alt="Java Course">
-                    <div class="course-content text-center">
-                        <h3 class="mt-3">Java</h3>
-                        <p>4 Modules</p>
-                        <a href="coursemodule.html" class="btn btn-dark btn-sm px-3">View More</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- JavaScript -->
-            <div class="col-md-4">
-                <div class="course-box shadow">
-                    <img src="images/course/javascript.jpg" class="course-img" alt="JavaScript Course">
-                    <div class="course-content text-center">
-                        <h3 class="mt-3">JavaScript</h3>
-                        <p>4 Modules</p>
-                        <a href="coursemodule.html" class="btn btn-dark btn-sm px-3">View More</a>
-                    </div>
-                </div>
-            </div>
-
         </div>
-    </section>
+
+        <!-- JAVA -->
+        <div class="col-md-4">
+            <div class="course-box">
+                <img src="images/course/java.jpg" class="course-img">
+
+                <div class="course-content text-center">
+                    <h3>Java</h3>
+                    <p>4 Modules</p>
+
+                    <div class="review" data-course="java">
+                        <span class="stars">☆☆☆☆☆</span>
+                        <span class="rating-text">0.0</span>
+                        <a href="review.html?course=java" class="review-link">
+                            Write a review
+                        </a>
+                    </div>
+
+                    <a href="studentpage.html" class="btn btn-dark btn-sm mt-2">
+                        View More
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- JAVASCRIPT -->
+        <div class="col-md-4">
+            <div class="course-box">
+                <img src="images/course/javascript.jpg" class="course-img">
+
+                <div class="course-content text-center">
+                    <h3>JavaScript</h3>
+                    <p>4 Modules</p>
+
+                    <div class="review" data-course="javascript">
+                        <span class="stars">☆☆☆☆☆</span>
+                        <span class="rating-text">0.0</span>
+                        <a href="review.html?course=javascript" class="review-link">
+                            Write a review
+                        </a>
+                    </div>
+
+                    <a href="studentpage.html" class="btn btn-dark btn-sm mt-2">
+                        View More
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
 
 <!-- FOOTER -->
 <footer class="site-footer py-4 mt-5">

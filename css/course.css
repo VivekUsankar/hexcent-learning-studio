@@ -87,6 +87,44 @@ body {
 .course-content p {
     color: #555;
 }
+/* REVIEW SECTION */
+
+.review {
+    display: flex;
+    align-items: center;          
+    justify-content: center;      
+    gap: 10px;
+    margin: 8px 0;
+    flex-wrap: wrap;              
+}
+
+/* Stars */
+.review .stars {
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: #ffc107;
+    line-height: 1;              
+}
+
+/* Rating text */
+.review .rating-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+}
+
+/* Review link */
+.review .review-link {
+    font-size: 14px;
+    color: #0d6efd;
+    text-decoration: none;
+    white-space: nowrap;         
+}
+
+.review .review-link:hover {
+    text-decoration: underline;
+}
+
 
 /* Footer */
 footer {
