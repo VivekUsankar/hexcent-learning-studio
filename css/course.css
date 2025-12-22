@@ -2,6 +2,17 @@
 body {
     padding-top: 80px;
 }
+.logo-img {
+    height: 40px;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .logo-img {
+        height: 32px;
+    }
+}
+
 
 /* HERO SECTION FIX */
 .hero-section {
